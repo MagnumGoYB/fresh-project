@@ -16,7 +16,9 @@
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "@commitlint/cli": "npm:@commitlint/cli@^19.8.0",
+    "@luca/cases": "jsr:@luca/cases@^1.0.0",
     "commitlint-config-gitmoji": "npm:commitlint-config-gitmoji@^2.3.1",
+    "date-fns": "npm:date-fns@^4.1.0",
     "git-cz": "npm:git-cz@^4.9.0",
     "preact": "https://esm.sh/preact@10.22.0",
     "preact/": "https://esm.sh/preact@10.22.0/",
