@@ -10,9 +10,14 @@
     "preview": "deno run -A main.ts",
     "update": "deno run -A -r https://fresh.deno.dev/update ."
   },
-  "lint": { "rules": { "tags": ["fresh", "recommended"] } },
-  "fmt": { "singleQuote": true, "semiColons": false },
-  "exclude": ["**/_fresh/*"],
+  "lint": {
+    "rules": { "tags": ["fresh", "recommended"] }
+  },
+  "fmt": {
+    "singleQuote": true,
+    "semiColons": false
+  },
+  "exclude": ["**/_fresh/*", "node_modules"],
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "@commitlint/cli": "npm:@commitlint/cli@^19.8.0",
