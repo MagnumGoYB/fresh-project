@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-deno lint --fix -q && deno fmt -q
+deno task format
 
 if [ $? -ne 0 ]; then
     echo "Pre-commit hook failed. Please fix the issues and try again."
