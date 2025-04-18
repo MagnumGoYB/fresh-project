@@ -1,9 +1,11 @@
 {
   "lock": false,
+  "version": "0.1.0",
+  "description": "A fresh Deno project",
   "tasks": {
     "check": "deno fmt --check && deno lint && deno check **/*.ts && deno check **/*.tsx",
     "format": "deno lint --fix -q && deno fmt -q",
-    "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run --unstable -A -",
+    "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run -A -",
     "manifest": "deno task cli manifest $(pwd)",
     "start": "deno run -A --watch=static/,routes/ dev.ts",
     "build": "deno run -A dev.ts build",
@@ -11,7 +13,9 @@
     "update": "deno run -A -r https://fresh.deno.dev/update ."
   },
   "lint": {
-    "rules": { "tags": ["fresh", "recommended"] }
+    "rules": {
+      "tags": ["fresh", "recommended"]
+    }
   },
   "fmt": {
     "singleQuote": true,
