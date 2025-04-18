@@ -10,7 +10,10 @@ export function handler(_req: Request): Response {
       console.log(snakeCase('stream started'))
       timer = setInterval(() => {
         const message = `It is ${
-          format(new Date(), 'pppp')
+          format(
+            new Date(),
+            'pppp',
+          )
         } (${counter}) [${controller.desiredSize}]\n`
         controller.enqueue(encoder.encode(message))
 

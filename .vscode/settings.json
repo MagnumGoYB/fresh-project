@@ -18,8 +18,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
-  "css.customData": [
-    ".vscode/tailwind.json"
-  ],
-  "commentTranslate.source": "Bing"
+  "css.customData": [".vscode/tailwind.json"],
+  "commentTranslate.source": "Bing",
+  "tailwindSorter.sortOnSave": true
 }
