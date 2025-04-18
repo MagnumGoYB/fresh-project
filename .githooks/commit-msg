@@ -2,8 +2,8 @@
 deno run --allow-read --allow-env --allow-sys --allow-run npm:@commitlint/cli --edit "$1" --config .commitlintrc
 
 if [ $? -ne 0 ]; then
-    echo "Commit message validation failed. Please fix the issues and try again."
-    exit 1
+  echo "Commit message validation failed. Please fix the issues and try again."
+  exit 1
 fi
 
 echo "Commit message validation passed. Proceeding with commit."
