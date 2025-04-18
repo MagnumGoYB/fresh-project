@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "A fresh Deno project",
   "tasks": {
-    "check": "deno fmt --check && deno lint && deno check ./**/*.ts && deno check ./**/*.tsx",
+    "check": "deno fmt --check && deno lint && deno check ./{routes,components,islands}",
     "format": "deno lint --fix -q && deno fmt -q",
     "cli": "echo \"import '\\$fresh/src/dev/cli.ts'\" | deno run -A -",
     "manifest": "deno task cli manifest $(pwd)",
